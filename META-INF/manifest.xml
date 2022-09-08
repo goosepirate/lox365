@@ -1,0 +1,11 @@
+<manifest:manifest>
+  <manifest:file-entry
+    manifest:media-type="application/vnd.sun.star.uno-typelibrary;type=RDB"
+    manifest:full-path="build/interface.rdb"/>
+  <manifest:file-entry
+    manifest:media-type="application/vnd.sun.star.configuration-data" 
+    manifest:full-path="addin.xcu"/>
+  <manifest:file-entry
+    manifest:media-type="application/vnd.sun.star.uno-component;type=Python" 
+    manifest:full-path="loader.py"/>
+</manifest:manifest> 
