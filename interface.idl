@@ -5,21 +5,34 @@ module org { module openoffice { module sheet { module addin {
         sequence< sequence< any > > DBG_ECHO(
             [in] sequence< sequence< any > > x1
         );
+        sequence< sequence< any > > DBG_ECHO2(
+            [in] sequence< any > x1
+        );
+        sequence< sequence< any > > DBG_ECHO3(
+            [in] any x1
+        );
         sequence< sequence< any > > FILTER(
             [in] sequence< sequence< any > > array,
             [in] sequence< sequence< any > > include,
-            [in] any if_empty
+            [in] any ifEmpty
         );
         sequence< sequence< any > > SORT(
             [in] sequence< sequence< any > > array,
-            [in] any sort_index,
-            [in] any sort_order
+            [in] any sortIndex,
+            [in] any sortOrder
+        );
+        sequence< sequence< any > > TEXTSPLIT(
+            [in] string text,
+            [in] string colDelimiter
+        );
+        sequence< sequence< any > > TOCOL(
+            [in] sequence< sequence< any > > array
         );
         sequence< sequence< any > > XLOOKUP(
-            [in] any lookup_value,
-            [in] sequence< sequence< any > > lookup_array,
-            [in] sequence< sequence< any > > return_array,
-            [in] any if_not_found
+            [in] any lookupValue,
+            [in] sequence< sequence< any > > lookupArray,
+            [in] sequence< sequence< any > > returnArray,
+            [in] any ifNotFound
         );
     };
 }; }; }; };

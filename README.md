@@ -13,16 +13,20 @@ Lox365 is a LibreOffice extension that adds modern spreadsheet functions like XL
 
 Once Lox365 is installed, just use them like you would in Excel.
 
-| Excel                                                        | Lox365  | Lox365 completeness | Note |
-| ------------------------------------------------------------ | ------- | ------------------- | ---- |
-| [FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759) | FILTER  | Full                |      |
-| [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c) | SORT    | Partial             | 1    |
-| [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929) | XLOOKUP | Partial             | 2    |
+| Excel                                                        | Lox365    | Lox365 completeness | Note |
+| ------------------------------------------------------------ | --------- | ------------------- | ---- |
+| [FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759) | FILTER    | Full                |      |
+| [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c) | SORT      | Partial             | 1    |
+| [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsplit-function-b1ca414e-4c21-4ca0-b1b7-bdecace8a6e7) | TEXTSPLIT | Partial             | 2    |
+| [TOCOL](https://support.microsoft.com/en-us/office/tocol-function-22839d9b-0b55-4fc1-b4e6-2761f8f122ed) | TOCOL     | Partial             | 3    |
+| [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929) | XLOOKUP   | Partial             | 4    |
 
 Notes:
 
-1. This version does not yet support `by_col`.
-2. This version does not yet support `match_mode` and `search_mode`.
+1. Not supported: `by_col`.
+2. Not supported: `row_delimiter`, `ignore_empty`, `match_mode`, `pad_with`.
+3. Not supported: `ignore`, `scan_by_column`.
+4. Not supported: `match_mode`, `search_mode`.
 
 ## Why
 
@@ -35,7 +39,6 @@ These functions are available in the latest Excel but not in LibreOffice, and no
 * RANDARRAY
 * SEQUENCE
 * SORTBY
-* TEXTSPLIT
 * UNIQUE
 * XMATCH
 
