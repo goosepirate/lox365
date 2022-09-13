@@ -16,26 +16,25 @@
             </node>
           </node>
         </node>
-        <node oor:name="XLOOKUP" oor:op="replace">
-          <prop oor:name="DisplayName"><value xml:lang="en">XLOOKUP</value></prop>
-          <prop oor:name="Description"><value xml:lang="en">Searches a range or an array for a match and returns the corresponding item from a second range or array. Provided by Lox365.</value></prop>
+        <node oor:name="DBG_ECHO2" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">DBG_ECHO2</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
           <prop oor:name="Category"><value>Add-in</value></prop>
           <node oor:name="Parameters">
-            <node oor:name="lookup_value" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">Lookup value</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">The value to search for</value></prop>
+            <node oor:name="x1" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">x1</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
             </node>
-            <node oor:name="lookup_array" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">Lookup array</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">The array or range to search</value></prop>
-            </node>
-            <node oor:name="return_array" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">Return array</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">The array or range to return</value></prop>
-            </node>
-            <node oor:name="if_not_found" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">[If not found]</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">Where a valid match is not found, return the [if_not_found] text you supply.</value></prop>
+          </node>
+        </node>
+        <node oor:name="DBG_ECHO3" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">DBG_ECHO3</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
+          <prop oor:name="Category"><value>Add-in</value></prop>
+          <node oor:name="Parameters">
+            <node oor:name="x1" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">x1</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
             </node>
           </node>
         </node>
@@ -52,7 +51,7 @@
               <prop oor:name="DisplayName"><value xml:lang="en">Include</value></prop>
               <prop oor:name="Description"><value xml:lang="en">An array of booleans where TRUE represents a row or column to retain.</value></prop>
             </node>
-            <node oor:name="if_empty" oor:op="replace">
+            <node oor:name="ifEmpty" oor:op="replace">
               <prop oor:name="DisplayName"><value xml:lang="en">[If empty]</value></prop>
               <prop oor:name="Description"><value xml:lang="en">Returned if no items are retained.</value></prop>
             </node>
@@ -67,13 +66,62 @@
               <prop oor:name="DisplayName"><value xml:lang="en">Array</value></prop>
               <prop oor:name="Description"><value xml:lang="en">The range or array to sort.</value></prop>
             </node>
-            <node oor:name="sort_index" oor:op="replace">
+            <node oor:name="sortIndex" oor:op="replace">
               <prop oor:name="DisplayName"><value xml:lang="en">[Sort index]</value></prop>
               <prop oor:name="Description"><value xml:lang="en">A number indicating the row or column to sort by.</value></prop>
             </node>
-            <node oor:name="sort_order" oor:op="replace">
+            <node oor:name="sortOrder" oor:op="replace">
               <prop oor:name="DisplayName"><value xml:lang="en">[Sort order]</value></prop>
               <prop oor:name="Description"><value xml:lang="en">A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order.</value></prop>
+            </node>
+          </node>
+        </node>
+        <node oor:name="TEXTSPLIT" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">TEXTSPLIT</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">Splits text into rows or columns using delimiters. Provided by Lox365.</value></prop>
+          <prop oor:name="Category"><value>Add-in</value></prop>
+          <node oor:name="Parameters">
+            <node oor:name="text" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Text</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The text you want to split.</value></prop>
+            </node>
+            <node oor:name="colDelimiter" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Column delimiter</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The text that marks the point where to split the text across columns.</value></prop>
+            </node>
+          </node>
+        </node>
+        <node oor:name="TOCOL" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">TOCOL</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">Returns the array as one column. Provided by Lox365.</value></prop>
+          <prop oor:name="Category"><value>Add-in</value></prop>
+          <node oor:name="Parameters">
+            <node oor:name="array" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Array</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The array to return as a column.</value></prop>
+            </node>
+          </node>
+        </node>
+        <node oor:name="XLOOKUP" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">XLOOKUP</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">Searches a range or an array for a match and returns the corresponding item from a second range or array. Provided by Lox365.</value></prop>
+          <prop oor:name="Category"><value>Add-in</value></prop>
+          <node oor:name="Parameters">
+            <node oor:name="lookupValue" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Lookup value</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The value to search for.</value></prop>
+            </node>
+            <node oor:name="lookupArray" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Lookup array</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The array or range to search.</value></prop>
+            </node>
+            <node oor:name="returnArray" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Return array</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The array or range to return.</value></prop>
+            </node>
+            <node oor:name="ifNotFound" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">[If not found]</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">Where a valid match is not found, return the [if_not_found] text you supply.</value></prop>
             </node>
           </node>
         </node>
