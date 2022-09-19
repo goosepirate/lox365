@@ -70,6 +70,11 @@ def test_TOCOL():
     assert TOCOL(((0,'b'),('c',0))) == ((0,),('b',),('c',),(0,))
     assert TOCOL(((0,),)) == ((0,),)
 
+def test_UNIQUE():
+    '''Typical'''
+    assert UNIQUE((('b',),('a',),('b',),('a',))) == \
+        (('b',),('a',))
+
 def test_XLOOKUP():
     '''Typical'''
     assert XLOOKUP('C',

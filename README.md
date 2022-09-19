@@ -19,14 +19,16 @@ Once Lox365 is installed, just use them like you would in Excel.
 | [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c) | SORT      | Partial             | 1    |
 | [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsplit-function-b1ca414e-4c21-4ca0-b1b7-bdecace8a6e7) | TEXTSPLIT | Partial             | 2    |
 | [TOCOL](https://support.microsoft.com/en-us/office/tocol-function-22839d9b-0b55-4fc1-b4e6-2761f8f122ed) | TOCOL     | Partial             | 3    |
-| [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929) | XLOOKUP   | Partial             | 4    |
+| [UNIQUE](https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e) | UNIQUE    | Partial             | 4    |
+| [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929) | XLOOKUP   | Partial             | 5    |
 
 Notes:
 
 1. Not supported: `by_col`.
 2. Not supported: `row_delimiter`, `ignore_empty`, `match_mode`, `pad_with`.
 3. Not supported: `ignore`, `scan_by_column`.
-4. Not supported: `match_mode`, `search_mode`.
+4. Not supported: `by_col`, `exactly_once`.
+5. Not supported: `match_mode`, `search_mode`.
 
 ## Why
 
@@ -34,15 +36,16 @@ I use these functions quite often in Excel and wanted to use them in LibreOffice
 
 ## More functions
 
-These functions are available in the latest Excel but not in LibreOffice, and not (yet) provided by Lox365:
+These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
 
 * RANDARRAY
 * SEQUENCE
 * SORTBY
-* UNIQUE
+* STOCKHISTORY
+* TOROW
 * XMATCH
 
-These functions are already available in LibreOffice, so they're not provided by Lox365:
+These functions are already available in LibreOffice:
 
 * CONCAT
 * IFS
@@ -61,4 +64,12 @@ https://bugs.documentfoundation.org/show_bug.cgi?id=126573
 
 https://bugs.documentfoundation.org/show_bug.cgi?id=127293
 
+https://gerrit.libreoffice.org/c/core/+/131905
+
 https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1uno.html
+
+https://wiki.openoffice.org/wiki/Calc/Add-In/Python_How-To
+
+https://wiki.openoffice.org/wiki/Python/Python_Language_Binding
+
+https://www.openoffice.org/api/docs/common/ref/com/sun/star/sheet/AddIn.html
