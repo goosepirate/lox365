@@ -43,6 +43,9 @@ def TOCOL(array):
             result.append((item,))
     return tuple(result)
 
+def UNIQUE(array):
+    return tuple(dict.fromkeys(array))
+
 def XLOOKUP(lookupValue, lookupArray, returnArray, ifNotFound=ERR_NA):
     if not ifNotFound: ifNotFound = ERR_NA
     lookup_direction = 0 # 0 is vertical; 1 is horizontal
