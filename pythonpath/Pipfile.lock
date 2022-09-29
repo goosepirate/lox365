@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8d787a78ea0f855b7dc807ed0b6d7656ce18b0500981d6c30b2cf6639c3579f0"
+            "sha256": "7f55a103920cd32baf51484d5c8f5982571f135d0286ec7d1f6aa920c6dd2158"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -39,10 +39,10 @@
         },
         "executing": {
             "hashes": [
-                "sha256:550d581b497228b572235e633599133eeee67073c65914ca346100ad56775349",
-                "sha256:98daefa9d1916a4f0d944880d5aeaf079e05585689bebd9ff9b32e31dd5e1017"
+                "sha256:2c2c07d1ec4b2d8f9676b25170f1d8445c0ee2eb78901afb075a4b8d83608c6a",
+                "sha256:4a6d96ba89eb3dcc11483471061b42b9006d8c9f81c584dd04246944cd022530"
             ],
-            "version": "==1.0.0"
+            "version": "==1.1.0"
         },
         "icecream": {
             "hashes": [
@@ -164,6 +164,14 @@
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
             "version": "==1.16.0"
+        },
+        "sortedcontainers": {
+            "hashes": [
+                "sha256:25caa5a06cc30b6b83d11423433f65d1f9d76c4c6a0c90e3379eaa43b9bfdb88",
+                "sha256:a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0"
+            ],
+            "index": "pypi",
+            "version": "==2.4.0"
         },
         "tomli": {
             "hashes": [

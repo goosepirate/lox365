@@ -82,6 +82,12 @@ def test_XLOOKUP():
         (('B',), ('D',), ('F',)),
     ) == (('D',),)
 
+    '''Blank key'''
+    assert XLOOKUP('',
+        (('A',), ('',),  ('E',), ('',)),
+        (('B',), ('D',), ('F',), ('H',)),
+    ) == (('D',),)
+
     '''Not found'''
     assert XLOOKUP('J',
         (('A',), ('C',), ('E',)),
@@ -118,3 +124,8 @@ def test_XLOOKUP():
         (('B',), ('D',), ('F',)),
         'Not found',
     ) == (('Not found',),)
+    assert XLOOKUP('J',
+        (('A',), ('C',)),
+        (('B',), ('D',)),
+        '',
+    ) == (('',),)

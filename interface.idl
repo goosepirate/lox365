@@ -1,5 +1,5 @@
 // #include <com/sun/star/beans/XPropertySet.idl>
-// #include <com/sun/star/table/XCellRange.idl>
+#include <com/sun/star/table/XCellRange.idl>
 #include <com/sun/star/uno/XInterface.idl>
 
 module org { module openoffice { module sheet { module addin {
@@ -12,6 +12,10 @@ module org { module openoffice { module sheet { module addin {
         );
         sequence< sequence< any > > DBG_ECHO3(
             [in] any x1
+        );
+        sequence< sequence< any > > DBG_PY(
+            [in] com::sun::star::table::XCellRange cr,
+            [in] string evalx
         );
         sequence< sequence< any > > FILTER(
             [in] sequence< sequence< any > > array,
@@ -35,8 +39,8 @@ module org { module openoffice { module sheet { module addin {
         );
         sequence< sequence< any > > XLOOKUP(
             [in] any lookupValue,
-            [in] sequence< sequence< any > > lookupArray,
-            [in] sequence< sequence< any > > returnArray,
+            [in] com::sun::star::table::XCellRange lookupArray,
+            [in] com::sun::star::table::XCellRange returnArray,
             [in] any ifNotFound
         );
     };

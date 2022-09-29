@@ -38,6 +38,21 @@
             </node>
           </node>
         </node>
+        <node oor:name="DBG_PY" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">DBG_PY</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
+          <prop oor:name="Category"><value>Add-in</value></prop>
+          <node oor:name="Parameters">
+            <node oor:name="cr" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">cr</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
+            </node>
+            <node oor:name="evalx" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">evalx</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">Input 2</value></prop>
+            </node>
+          </node>
+        </node>
         <node oor:name="FILTER" oor:op="replace">
           <prop oor:name="DisplayName"><value xml:lang="en">FILTER</value></prop>
           <prop oor:name="Description"><value xml:lang="en">Filter a range or array. Provided by Lox365.</value></prop>
