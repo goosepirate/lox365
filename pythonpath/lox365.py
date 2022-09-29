@@ -1,17 +1,27 @@
 # import functools
+import pprint
 
 ERR_CALC = '#CALC!'
 ERR_NA = '#N/A'
 
 def DBG_ECHO(x1):
     return ((repr(x1),),)
-def DBG_ECHO2(x1):
-    return ((repr(x1),),)
-def DBG_ECHO3(x1):
-    return ((repr(x1),),)
+
+def DBG_PY(cr, evalx):
+    address = cr.RangeAddress
+    useful_ranges = cr.queryContentCells(23).RangeAddresses
+    useful_positions = {'left': 0, 'top': 0,
+        'right':  max(range.EndColumn for range in useful_ranges) - address.StartColumn,
+        'bottom': max(range.EndRow    for range in useful_ranges) - address.StartRow
+    }
+    useful_dataarray = cr.getCellRangeByPosition(
+        useful_positions['left'],  useful_positions['top'],
+        useful_positions['right'], useful_positions['bottom']).DataArray
+    return ((repr(evalx),),)
+    # return ((pprint.pformat(repr(eval(evalx))),),)
 
 def FILTER(array, include, ifEmpty=ERR_CALC):
-    if not ifEmpty: ifEmpty = ERR_CALC
+    if ifEmpty is None: ifEmpty = ERR_CALC
     lookup_direction = 0 # 0 is vertical; 1 is horizontal
     if len(include) == 1 and len(include[0]) > 1: lookup_direction = 1
     import itertools
@@ -22,8 +32,8 @@ def FILTER(array, include, ifEmpty=ERR_CALC):
     return ans if ans else ((ifEmpty,),)
 
 def SORT(array, sortIndex=1, sortOrder=1):
-    if not sortIndex: sortIndex = 1
-    if not sortOrder or sortOrder == 1: reverse = False
+    if sortIndex is None: sortIndex = 1
+    if sortOrder is None or sortOrder == 1: reverse = False
     elif sortOrder == -1: reverse = True
     else: return ValueError
     return tuple(sorted(array,
@@ -47,7 +57,7 @@ def UNIQUE(array):
     return tuple(dict.fromkeys(array))
 
 def XLOOKUP(lookupValue, lookupArray, returnArray, ifNotFound=ERR_NA):
-    if not ifNotFound: ifNotFound = ERR_NA
+    if ifNotFound is None: ifNotFound = ERR_NA
     lookup_direction = 0 # 0 is vertical; 1 is horizontal
     if len(lookupArray) == 1 and len(lookupArray[0]) > 1: lookup_direction = 1
     try:

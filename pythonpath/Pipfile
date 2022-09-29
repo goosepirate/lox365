@@ -9,6 +9,7 @@ pytest-benchmark = "*"
 icecream = "*"
 numpy = "*"
 pygal = "*"
+sortedcontainers = "*"
 
 [dev-packages]
 

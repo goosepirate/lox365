@@ -1,10 +1,30 @@
 # pytest-benchmark
 from lox365 import *
 
-# def test_XLOOKUP_large_arrays(benchmark):
-#     benchmark(XLOOKUP, 'C',
-#         tuple([()]*500000) + (('A',), ('C',), ('E',)) + tuple([()]*500000),
-#         tuple([()]*500000) + (('B',), ('D',), ('F',)) + tuple([()]*500000),
+def test_XLOOKUP_all_rows_early_match(benchmark):
+    benchmark(XLOOKUP, 'C',
+        tuple([('A',),('B',),('C',)] + [('',)] * (1048576 - 3)),
+        tuple([('D',),('E',),('F',)] + [('',)] * (1048576 - 3)))
+
+def test_XLOOKUP_all_rows_late_match(benchmark):
+    benchmark(XLOOKUP, 'C',
+        tuple([('',)] * (1048576 - 3) + [('A',),('B',),('C',)]),
+        tuple([('',)] * (1048576 - 3) + [('D',),('E',),('F',)]))
+
+# def test_XLOOKUP_repeated_lookups_on_same_array(benchmark):
+#     import numpy as np
+#     called = 0
+#     rand_lookup_array = tuple()
+#     def get_rand_lookup_array():
+#         nonlocal called
+#         nonlocal rand_lookup_array
+#         if called % 100 == 0:
+#             rand_lookup_array = tuple(map(tuple, np.random.uniform(0,100,100000).reshape(-1,1)))
+#         called += 1
+#         return rand_lookup_array
+#     benchmark(XLOOKUP, np.random.uniform(0,100),
+#         get_rand_lookup_array(),
+#         tuple(map(tuple, np.random.uniform(0,100,100000).reshape(-1,1)))
 #     )
 
 # def test_TEXTSPLIT_large_string(benchmark):

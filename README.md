@@ -4,10 +4,12 @@ Lox365 is a LibreOffice extension that adds modern spreadsheet functions like XL
 
 ![Screenshot](image1.png)
 
+![Screenshot](image2.png)
+
 ## Install
 
-1. Download the extension `Lox365.oxt`.
-2. Start LibreOffice > Tools > Extension Manager > Add > Select the oxt file > restart LibreOffice
+1. Download the extension `Lox365.oxt` from [Releases](https://github.com/goosepirate/lox365/releases).
+2. Start LibreOffice > Tools > Extension Manager > Add > Select the oxt file > restart LibreOffice.
 
 ## Usage
 
@@ -30,11 +32,37 @@ Notes:
 4. Not supported: `by_col`, `exactly_once`.
 5. Not supported: `match_mode`, `search_mode`.
 
+Note that since LibreOffice Calc does not support [dynamic arrays](https://support.microsoft.com/en-us/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7), many of the functions provided here are [standard array formulas](https://help.libreoffice.org/latest/en-US/text/scalc/01/04060107.html) (also known as CSE formulas).
+
 ## Why
 
 I use these functions quite often in Excel and wanted to use them in LibreOffice too, so I made this. Contributions are welcome.
 
-## More functions
+Here are what others are saying about this project:
+
+> Thanks for this; great idea!
+
+— u/timespreader
+
+> Really nice idea.
+
+— Behzat Yildirim
+
+> Very well done to the creator of the extension.
+
+— Jimmy
+
+> Oh, wonderful!
+>
+> 😀 Thanks for implementing this!
+
+— Arne
+
+> The support of XLOOKUP is a great addition.
+
+— Marius Spix
+
+## Other functions
 
 These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
 
@@ -54,11 +82,35 @@ These functions are already available in LibreOffice:
 * SWITCH
 * TEXTJOIN
 
-## Reference
+## References
+
+Usage
 
 https://wiki.documentfoundation.org/Documentation/HowTo/install_extension
 
 https://wiki.documentfoundation.org/Feature_Comparison:_LibreOffice_-_Microsoft_Office
+
+Media
+
+https://blog.documentfoundation.org/blog/2022/09/23/lox365-extension-xlookup-and-more-for-libreoffice-calc/
+
+https://es.blog.documentfoundation.org/extension-lox365-xlookup-y-mas-para-libreoffice-calc/
+
+https://blog.libreoffice.org.tr/2022/09/23/libreoffice-calc-icin-yeni-bir-eklenti-goosepirate/
+
+https://www.reddit.com/r/libreoffice/comments/x98nqt/lox365_xlookup_for_libreoffice/
+
+https://www.reddit.com/r/libreoffice/comments/xltuio/lox365_extension_xlookup_filter_sort_and_more_for/
+
+https://www.reddit.com/r/opensource/comments/xfdmml/lox365_xlookup_for_libreoffice/
+
+https://twitter.com/LibreOffice/status/1573232603351879682
+
+https://fosstodon.org/@libreoffice/109046849962893237
+
+https://www.facebook.com/libreoffice.org/posts/pfbid07mXEodbV2i32W6JkbRYWdDoyw8sUkiw7cX8QdTLU357AhJKGr9QoH5zKeJUxArkzl
+
+Development
 
 https://bugs.documentfoundation.org/show_bug.cgi?id=126573
 
@@ -66,10 +118,14 @@ https://bugs.documentfoundation.org/show_bug.cgi?id=127293
 
 https://gerrit.libreoffice.org/c/core/+/131905
 
-https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1uno.html
-
 https://wiki.openoffice.org/wiki/Calc/Add-In/Python_How-To
 
 https://wiki.openoffice.org/wiki/Python/Python_Language_Binding
 
+https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html
+
+https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1uno.html
+
 https://www.openoffice.org/api/docs/common/ref/com/sun/star/sheet/AddIn.html
+
+https://www.openoffice.org/api/docs/common/ref/com/sun/star/sheet/module-ix.html
