@@ -35,7 +35,7 @@ module org { module openoffice { module sheet { module addin {
             [in] sequence< sequence< any > > array
         );
         sequence< sequence< any > > UNIQUE(
-            [in] sequence< sequence< any > > array
+            [in] com::sun::star::table::XCellRange array
         );
         sequence< sequence< any > > XLOOKUP(
             [in] any lookupValue,

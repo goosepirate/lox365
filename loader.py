@@ -1,3 +1,8 @@
+# LibreOffice 7.4 on Windows bundles Python 3.8, so import from __future__
+# in order to use new type hinting.
+# https://peps.python.org/pep-0585/
+from __future__ import annotations
+
 import uno
 import unohelper
 from org.openoffice.sheet.addin import XLox365
@@ -41,7 +46,12 @@ class Lox365(unohelper.Base, XLox365):
     def SORT     (self, *args): return lx.SORT     (*args)
     def TEXTSPLIT(self, *args): return lx.TEXTSPLIT(*args)
     def TOCOL    (self, *args): return lx.TOCOL    (*args)
-    def UNIQUE   (self, *args): return lx.UNIQUE   (*args)
+
+    def UNIQUE(self, *args):
+        shrunk_corners = self._get_shrunk_corners(args[0])
+        shrunk_dataarray = self._get_dataarray(args[0], shrunk_corners)
+        args = (shrunk_dataarray,)
+        return lx.UNIQUE(*args)
 
     def XLOOKUP(self, *args):
         shrunk_corners1 = self._get_shrunk_corners(args[1])

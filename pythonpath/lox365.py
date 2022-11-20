@@ -18,7 +18,8 @@ def DBG_PY(cr, evalx):
         useful_positions['left'],  useful_positions['top'],
         useful_positions['right'], useful_positions['bottom']).DataArray
     return ((repr(evalx),),)
-    # return ((pprint.pformat(repr(eval(evalx))),),)
+    # try: return ((pprint.pformat(repr(eval(evalx))),),)
+    # except Exception as e: return ((pprint.pformat(repr(e)),),)
 
 def FILTER(array, include, ifEmpty=ERR_CALC):
     if ifEmpty is None: ifEmpty = ERR_CALC
