@@ -6,7 +6,7 @@ Lox365 is a LibreOffice extension that adds modern spreadsheet functions like XL
 
 ![Screenshot](image2.png)
 
-## Install
+## Install or update
 
 1. Download the extension `Lox365.oxt` from [Releases](https://github.com/goosepirate/lox365/releases).
 2. Start LibreOffice > Tools > Extension Manager > Add > Select the oxt file > restart LibreOffice.
@@ -44,6 +44,10 @@ Here are what others are saying about this project:
 
 — u/timespreader
 
+> Great work, goose! 😊
+
+— Mike Saunders
+
 > Really nice idea.
 
 — Behzat Yildirim
@@ -62,7 +66,11 @@ Here are what others are saying about this project:
 
 — Marius Spix
 
-## Other functions
+> Pues muchísimas gracias.
+
+— Guille
+
+## Availability of other function 
 
 These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
 
@@ -72,6 +80,10 @@ These functions are not in LibreOffice and not provided by Lox365 but are availa
 * STOCKHISTORY
 * TOROW
 * XMATCH
+
+These functions are not in LibreOffice but are planned to be added to Calc:
+
+* XLOOKUP
 
 These functions are already available in LibreOffice:
 
@@ -94,9 +106,7 @@ Media
 
 https://blog.documentfoundation.org/blog/2022/09/23/lox365-extension-xlookup-and-more-for-libreoffice-calc/
 
-https://es.blog.documentfoundation.org/extension-lox365-xlookup-y-mas-para-libreoffice-calc/
-
-https://blog.libreoffice.org.tr/2022/09/23/libreoffice-calc-icin-yeni-bir-eklenti-goosepirate/
+https://blog.documentfoundation.org/blog/2022/10/06/libreoffice-project-and-community-recap-september-2022/
 
 https://www.reddit.com/r/libreoffice/comments/x98nqt/lox365_xlookup_for_libreoffice/
 
@@ -110,6 +120,16 @@ https://fosstodon.org/@libreoffice/109046849962893237
 
 https://www.facebook.com/libreoffice.org/posts/pfbid07mXEodbV2i32W6JkbRYWdDoyw8sUkiw7cX8QdTLU357AhJKGr9QoH5zKeJUxArkzl
 
+https://es.blog.documentfoundation.org/extension-lox365-xlookup-y-mas-para-libreoffice-calc/ (es)
+
+https://forest.watch.impress.co.jp/docs/news/1442776.html (jp)
+
+https://www.zaikei.co.jp/article/20220928/691186.html (jp)
+
+https://www.matsuura.com.br/2022/09/extensao-lox365-xlookup-e-mais-para.html (pt)
+
+https://blog.libreoffice.org.tr/2022/09/23/libreoffice-calc-icin-yeni-bir-eklenti-goosepirate/ (tr)
+
 Development
 
 https://bugs.documentfoundation.org/show_bug.cgi?id=126573
@@ -118,14 +138,24 @@ https://bugs.documentfoundation.org/show_bug.cgi?id=127293
 
 https://gerrit.libreoffice.org/c/core/+/131905
 
+https://flywire.github.io/lo-p/
+
 https://wiki.openoffice.org/wiki/Calc/Add-In/Python_How-To
 
 https://wiki.openoffice.org/wiki/Python/Python_Language_Binding
+
+https://wiki.documentfoundation.org/Documentation/DevGuide/Spreadsheet_Documents
+
+https://help.libreoffice.org/latest/en-US/text/sbasic/python/main0000.html
+
+https://api.libreoffice.org/docs/idl/ref/namespaces.html
 
 https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html
 
 https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1uno.html
 
+https://www.openoffice.org/api/docs/common/ref/com/sun/star/sheet/module-ix.html
+
 https://www.openoffice.org/api/docs/common/ref/com/sun/star/sheet/AddIn.html
 
-https://www.openoffice.org/api/docs/common/ref/com/sun/star/sheet/module-ix.html
+https://git.libreoffice.org/core/
