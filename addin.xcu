@@ -5,54 +5,6 @@
   <node oor:name="AddInInfo">
     <node oor:name="com.goosepirate.lox365.oxt" oor:op="replace">
       <node oor:name="AddInFunctions">
-        <node oor:name="DBG_ECHO" oor:op="replace">
-          <prop oor:name="DisplayName"><value xml:lang="en">DBG_ECHO</value></prop>
-          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
-          <prop oor:name="Category"><value>Add-in</value></prop>
-          <node oor:name="Parameters">
-            <node oor:name="x1" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">x1</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
-            </node>
-          </node>
-        </node>
-        <node oor:name="DBG_ECHO2" oor:op="replace">
-          <prop oor:name="DisplayName"><value xml:lang="en">DBG_ECHO2</value></prop>
-          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
-          <prop oor:name="Category"><value>Add-in</value></prop>
-          <node oor:name="Parameters">
-            <node oor:name="x1" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">x1</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
-            </node>
-          </node>
-        </node>
-        <node oor:name="DBG_ECHO3" oor:op="replace">
-          <prop oor:name="DisplayName"><value xml:lang="en">DBG_ECHO3</value></prop>
-          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
-          <prop oor:name="Category"><value>Add-in</value></prop>
-          <node oor:name="Parameters">
-            <node oor:name="x1" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">x1</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
-            </node>
-          </node>
-        </node>
-        <node oor:name="DBG_PY" oor:op="replace">
-          <prop oor:name="DisplayName"><value xml:lang="en">DBG_PY</value></prop>
-          <prop oor:name="Description"><value xml:lang="en">For debugging only. Provided by Lox365.</value></prop>
-          <prop oor:name="Category"><value>Add-in</value></prop>
-          <node oor:name="Parameters">
-            <node oor:name="cr" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">cr</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">Input 1</value></prop>
-            </node>
-            <node oor:name="evalx" oor:op="replace">
-              <prop oor:name="DisplayName"><value xml:lang="en">evalx</value></prop>
-              <prop oor:name="Description"><value xml:lang="en">Input 2</value></prop>
-            </node>
-          </node>
-        </node>
         <node oor:name="FILTER" oor:op="replace">
           <prop oor:name="DisplayName"><value xml:lang="en">FILTER</value></prop>
           <prop oor:name="Description"><value xml:lang="en">Filters an array. Provided by Lox365.</value></prop>

@@ -37,11 +37,6 @@ class Lox365(unohelper.Base, XLox365):
         }
         return useful_positions
 
-    def DBG_ECHO (self, *args): return lx.DBG_ECHO (*args)
-    def DBG_ECHO2(self, *args): return lx.DBG_ECHO (*args)
-    def DBG_ECHO3(self, *args): return lx.DBG_ECHO (*args)
-    def DBG_PY   (self, *args): return lx.DBG_PY   (*args)
-
     def FILTER   (self, *args): return lx.FILTER   (*args)
     def SORT     (self, *args): return lx.SORT     (*args)
     def TEXTSPLIT(self, *args): return lx.TEXTSPLIT(*args)

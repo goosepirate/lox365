@@ -4,23 +4,6 @@ import pprint
 ERR_CALC = '#CALC!'
 ERR_NA = '#N/A'
 
-def DBG_ECHO(x1):
-    return ((repr(x1),),)
-
-def DBG_PY(cr, evalx):
-    address = cr.RangeAddress
-    useful_ranges = cr.queryContentCells(23).RangeAddresses
-    useful_positions = {'left': 0, 'top': 0,
-        'right':  max(range.EndColumn for range in useful_ranges) - address.StartColumn,
-        'bottom': max(range.EndRow    for range in useful_ranges) - address.StartRow
-    }
-    useful_dataarray = cr.getCellRangeByPosition(
-        useful_positions['left'],  useful_positions['top'],
-        useful_positions['right'], useful_positions['bottom']).DataArray
-    return ((repr(evalx),),)
-    # try: return ((pprint.pformat(repr(eval(evalx))),),)
-    # except Exception as e: return ((pprint.pformat(repr(e)),),)
-
 def FILTER(array, include, ifEmpty=ERR_CALC):
     if ifEmpty is None: ifEmpty = ERR_CALC
     lookup_direction = 0 # 0 is vertical; 1 is horizontal
