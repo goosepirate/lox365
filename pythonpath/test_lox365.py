@@ -8,6 +8,11 @@ def test_FILTER():
         ((1,), (0,), (1,)),
     ) == (('A', 3), ('B', 4))
 
+    '''Single row result'''
+    assert FILTER((('A', 3), ('C', 2), ('B', 4)),
+        ((0,), (0,), (1,)),
+    ) == (('B', 4), (0, 0))
+
     '''Not found'''
     assert FILTER(
         (('A', 3), ('C', 2)),

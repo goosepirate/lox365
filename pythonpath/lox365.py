@@ -11,8 +11,10 @@ def FILTER(array, include, ifEmpty=ERR_CALC):
     import itertools
     if lookup_direction == 0:
         ans = tuple(itertools.compress(array, [i[0] for i in include]))
-    elif lookup_direction == 1:
-        return tuple(tuple(itertools.compress(row, include[0])) for row in array)
+        if len(ans) == 1:
+            ans = (ans[0], tuple([0] * len(array[0])),)
+    else:
+        ans = tuple(tuple(itertools.compress(row, include[0])) for row in array)
     return ans if ans else ((ifEmpty,),)
 
 def SORT(array, sortIndex=1, sortOrder=1):

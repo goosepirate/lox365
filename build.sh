@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p build && \
 (
     rm -v build/interface.urd; \
     PATH=$PATH:/usr/lib/libreoffice/sdk/bin idlc -I /usr/lib/libreoffice/sdk/idl -w interface.idl && \
