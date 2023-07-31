@@ -44,6 +44,11 @@ def test_SORT():
         (('C', 1), ('B', 4), ('A', 3)),
     ) == (('A', 3), ('B', 4), ('C', 1))
 
+    '''Only numbers in array'''
+    assert SORT(
+        ((3.0, 1), (2.4, 4), (4.1, 3), (1.1, 5)),
+    ) == ((1.1, 5), (2.4, 4), (3.0, 1), (4.1, 3))
+
     '''Multiple datatypes in array'''
     assert SORT(
         (('C', 1), ('B', 4), ('A', 3), (1, 5)),

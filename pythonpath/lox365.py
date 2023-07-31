@@ -22,8 +22,11 @@ def SORT(array, sortIndex=1, sortOrder=1):
     if sortOrder is None or sortOrder == 1: reverse = False
     elif sortOrder == -1: reverse = True
     else: return ValueError
+    stringify = True
+    if all(isinstance(item[sortIndex - 1], float) for item in array):
+        stringify = False
     return tuple(sorted(array,
-        key=lambda r: str(r[sortIndex - 1]),
+        key=lambda r: str(r[sortIndex - 1]) if stringify else r[sortIndex - 1],
         reverse=reverse))
 
 def TEXTSPLIT(text, colDelimiter):
