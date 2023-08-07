@@ -1,0 +1,22 @@
+name: Run tests, build oxt, and release
+
+on:
+  push
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build container image
+        run: podman image build --tag=localhost/lox365:latest .
+      - name: Pytest
+        run: podman container run --rm --volume="$PWD":/app --workdir=/app localhost/lox365:latest pytest
+      - name: Build oxt
+        run: podman container run --rm --volume="$PWD":/app --workdir=/app localhost/lox365:latest bash build.sh
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: true
+          files: build/Lox365.oxt
