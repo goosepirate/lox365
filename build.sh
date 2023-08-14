@@ -11,7 +11,14 @@ mkdir -p build && \
 ) && \
 (
     rm -v build/Lox365.oxt; \
-    7zz a -xr!__pycache__ -xr!.benchmarks -xr!.github -xr!.pytest_cache -xr!image* -xr!test* Lox365.zip ./* && \
+    7zz a \
+        -xr!__pycache__ \
+        -xr!.benchmarks \
+        -xr!.github \
+        -xr!.pytest_cache \
+        -xr!image*.png \
+        -xr!test* \
+    Lox365.zip ./* && \
     mv -v Lox365.zip build/Lox365.oxt
 ) && \
 echo 'Build successful.'
