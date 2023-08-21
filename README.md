@@ -1,6 +1,6 @@
 # ⚗️ Lox365: XLOOKUP for LibreOffice
 
-Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions like XLOOKUP and FILTER.
+Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions like XLOOKUP, FILTER, and more.
 
 ![Screenshot](image1.png)
 
@@ -10,6 +10,8 @@ Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions li
 
 1. Download the extension `Lox365.oxt` from [Releases](https://github.com/goosepirate/lox365/releases).
 2. Start LibreOffice > Tools > Extension Manager > Add > Select the oxt file > restart LibreOffice.
+
+Do you like using Lox365? Let me know in the [Discussions](https://github.com/goosepirate/lox365/discussions).
 
 ## Usage
 
@@ -23,47 +25,89 @@ This is because Lox365 functions are [array functions](https://help.libreoffice.
 
 ### Syntax
 
-* `FILTER(array, include, [if_empty])`
-  * Filters an array.
-  * `array`: The array to filter.
-  * `include`: An array of booleans where TRUE represents a row or column to retain.
-  * `[if_empty]`: Returned if no items are retained.
-  * Similar to Excel's [FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759).
-* `SORT(array, [sort_index], [sort_order])`
-  * Sorts an array.
-  * `array`: The array to sort.
-  * `[sort_index]`: A number indicating the row or column to sort by. Optional.
-  * `[sort_order]`: A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order. Optional.
-  * Similar to Excel's [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c).
-  * Not supported: `by_col`.
-* `TEXTSPLIT(text, col_delimiter)`
-  * Splits text into columns using delimiters.
-  * `text`: The text you want to split.
-  * `col_delimiter`: The text that marks the point where to split the text across columns.
-  * Similar to Excel's [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsplit-function-b1ca414e-4c21-4ca0-b1b7-bdecace8a6e7).
-  * Not supported: `row_delimiter`, `ignore_empty`, `match_mode`, `pad_with`.
-* `TOCOL(array)`
-  * Returns the array as one column.
-  * `array`: The array to return as a column.
-  * Similar to Excel's [TOCOL](https://support.microsoft.com/en-us/office/tocol-function-22839d9b-0b55-4fc1-b4e6-2761f8f122ed).
-  * Not supported: `ignore`, `scan_by_column`.
-* `UNIQUE(array)`
-  * Returns the unique values from a range or array.
-  * `array`: The array from which to return unique rows.
-  * Similar to Excel's [UNIQUE](https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e).
-  * Not supported: `by_col`, `exactly_once`.
-* `XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found])`
-  * Searches an array for a match and returns the corresponding item from a second array.
-  * `lookup_value`: The value to search for.
-  * `lookup_array`: The array to search.
-  * `return_array`: The array to return.
-  * `[if_not_found]`: Where a valid match is not found, return the [if_not_found] text you supply. Optional.
-  * Similar to Excel's [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
-  * Not supported: `match_mode`, `search_mode`.
+#### FILTER
+
+Filters an array.
+
+Similar to Excel's [FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759).
+
+![Screenshot of FILTER function](image2.png)
+
+`=FILTER(array, include, [if_empty])`
+
+* `array`: The array to filter.
+* `include`: An array of booleans where TRUE represents a row or column to retain.
+* `[if_empty]`: Returned if no items are retained. Optional.
+
+#### SORT
+
+Sorts an array.
+
+Similar to Excel's [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c).
+
+![Screenshot of SORT function](image3.png)
+
+`=SORT(array, [sort_index], [sort_order])`
+* `array`: The array to sort.
+* `[sort_index]`: A number indicating the row or column to sort by. Optional.
+* `[sort_order]`: A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order. Optional.
+* Not supported: `by_col`.
+
+#### TEXTSPLIT
+
+Splits text into columns using delimiters.
+
+Similar to Excel's [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsplit-function-b1ca414e-4c21-4ca0-b1b7-bdecace8a6e7).
+
+![Screenshot of TEXTSPLIT function](image4.png)
+
+`=TEXTSPLIT(text, col_delimiter)`
+* `text`: The text you want to split.
+* `col_delimiter`: The text that marks the point where to split the text across columns.
+* Not supported: `row_delimiter`, `ignore_empty`, `match_mode`, `pad_with`.
+
+#### TOCOL
+
+Returns the array as one column.
+
+Similar to Excel's [TOCOL](https://support.microsoft.com/en-us/office/tocol-function-22839d9b-0b55-4fc1-b4e6-2761f8f122ed).
+
+![Screenshot of TOCOL function](image5.png)
+
+`=TOCOL(array)`
+* `array`: The array to return as a column.
+* Not supported: `ignore`, `scan_by_column`.
+
+#### UNIQUE
+
+Returns the unique values from a range or array.
+
+Similar to Excel's [UNIQUE](https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e).
+
+![Screenshot of UNIQUE function](image6.png)
+
+`=UNIQUE(array)`
+* `array`: The array from which to return unique rows.
+* Not supported: `by_col`, `exactly_once`.
+
+#### XLOOKUP
+
+Searches an array for a match and returns the corresponding item from a second array.
+
+Similar to Excel's [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
+
+![Screenshot of XLOOKUP function](image1.png)
+
+`=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found])`
+* `lookup_value`: The value to search for.
+* `lookup_array`: The array to search.
+* `return_array`: The array to return.
+* `[if_not_found]`: Where a valid match is not found, return the [if_not_found] text you supply. Optional.
+* Not supported: `match_mode`, `search_mode`.
 
 ## Why
 
-I use these functions quite often in Excel and wanted to use them in LibreOffice too, so I made this. Contributions are welcome.
+I use these functions quite often in Excel and wanted to use them in LibreOffice too, so I made this.
 
 Here are what others are saying about this project:
 
@@ -92,6 +136,10 @@ Here are what others are saying about this project:
 > The support of XLOOKUP is a great addition.
 
 — Marius Spix
+
+> Dobre rozszerzenie, bardzo przydatne funkcje.
+
+— Piotr Osada
 
 > Pues muchísimas gracias.
 
@@ -149,6 +197,8 @@ https://www.facebook.com/libreoffice.org/posts/pfbid07mXEodbV2i32W6JkbRYWdDoyw8s
 
 🇪🇸 https://es.blog.documentfoundation.org/extension-lox365-xlookup-y-mas-para-libreoffice-calc/
 
+🇪🇸 https://www.youtube.com/watch?v=BSPCJnc6r2g
+
 🇯🇵 https://forest.watch.impress.co.jp/docs/news/1442776.html
 
 🇯🇵 https://opensource.srad.jp/story/22/09/27/1337200/
@@ -202,4 +252,10 @@ https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1uno_1_1X
 ### Other
 
 https://extensions.libreoffice.org/en/extensions/show/27434
+
+https://bugs.documentfoundation.org/
+
+https://ask.libreoffice.org/
+
+https://forum.openoffice.org/en/forum/index.php
 

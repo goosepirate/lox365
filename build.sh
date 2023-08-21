@@ -17,6 +17,7 @@ mkdir -p build && \
         -xr!.github \
         -xr!.pytest_cache \
         -xr!image*.png \
+        -xr!README.md \
         -xr!test* \
     Lox365.zip ./* && \
     mv -v Lox365.zip build/Lox365.oxt
