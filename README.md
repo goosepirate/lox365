@@ -6,12 +6,14 @@ Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions li
 
 ![Screenshot](image2.png)
 
+Do you like using Lox365? Let me know in the [Discussions](https://github.com/goosepirate/lox365/discussions). Maybe [buy me a coffee](https://liberapay.com/goosepirate/).
+
+<a href="https://liberapay.com/goosepirate/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
 ## Install or update
 
 1. Download the extension `Lox365.oxt` from [Releases](https://github.com/goosepirate/lox365/releases).
 2. Start LibreOffice > Tools > Extension Manager > Add > Select the oxt file > restart LibreOffice.
-
-Do you like using Lox365? Let me know in the [Discussions](https://github.com/goosepirate/lox365/discussions).
 
 ## Usage
 
