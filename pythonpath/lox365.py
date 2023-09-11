@@ -17,6 +17,11 @@ def FILTER(array, include, ifEmpty=ERR_CALC):
         ans = tuple(tuple(itertools.compress(row, include[0])) for row in array)
     return ans if ans else ((ifEmpty,),)
 
+try:
+    import imagefn
+    IMAGE = imagefn.IMAGE
+except ImportError: pass
+
 def SORT(array, sortIndex=1, sortOrder=1):
     if sortIndex is None: sortIndex = 1
     if sortOrder is None or sortOrder == 1: reverse = False

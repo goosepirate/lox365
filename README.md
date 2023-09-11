@@ -41,6 +41,26 @@ Similar to Excel's [FILTER](https://support.microsoft.com/en-us/office/filter-fu
 * `include`: An array of booleans where TRUE represents a row or column to retain.
 * `[if_empty]`: Returned if no items are retained. Optional.
 
+#### IMAGE
+
+Returns an image from a given source.
+
+The source can be a local image file or a web URL. You can use a web URL of a third-party service to generate, for example, a QR code, equation, or diagram.
+
+Similar to Excel's [IMAGE](https://support.microsoft.com/en-us/office/image-function-7e112975-5e52-4f2a-b9da-1d913d51f5d5).
+
+![Screenshot of IMAGE function](image7.png)
+
+![Screenshot of IMAGE function](image8.png)
+
+![Screenshot of IMAGE function](image9.png)
+
+![Screenshot of IMAGE function](image10.png)
+
+`=IMAGE(out_cell, source)`
+* `out_cell`: Reference to the cell where the image is to be placed.
+* `source`: The path of the source that points to the image.
+
 #### SORT
 
 Sorts an array.

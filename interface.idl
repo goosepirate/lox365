@@ -1,3 +1,4 @@
+#include <com/sun/star/beans/XPropertySet.idl>
 #include <com/sun/star/table/XCellRange.idl>
 #include <com/sun/star/uno/XInterface.idl>
 
@@ -7,6 +8,11 @@ module org { module openoffice { module sheet { module addin {
             [in] sequence< sequence< any > > array,
             [in] sequence< sequence< any > > include,
             [in] any ifEmpty
+        );
+        any IMAGE(
+            [in] com::sun::star::beans::XPropertySet doc,
+            [in] com::sun::star::table::XCellRange out_cell,
+            [in] string url
         );
         sequence< sequence< any > > SORT(
             [in] sequence< sequence< any > > array,

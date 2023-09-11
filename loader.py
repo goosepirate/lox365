@@ -38,6 +38,7 @@ class Lox365(unohelper.Base, XLox365):
         return useful_positions
 
     def FILTER   (self, *args): return lx.FILTER   (*args)
+    def IMAGE    (self, *args): return lx.IMAGE    (*args)
     def SORT     (self, *args): return lx.SORT     (*args)
     def TEXTSPLIT(self, *args): return lx.TEXTSPLIT(*args)
     def TOCOL    (self, *args): return lx.TOCOL    (*args)

@@ -24,6 +24,21 @@
             </node>
           </node>
         </node>
+        <node oor:name="IMAGE" oor:op="replace">
+          <prop oor:name="DisplayName"><value xml:lang="en">IMAGE</value></prop>
+          <prop oor:name="Description"><value xml:lang="en">Returns an image from a given source. Provided by Lox365.</value></prop>
+          <prop oor:name="Category"><value>Add-in</value></prop>
+          <node oor:name="Parameters">
+            <node oor:name="out_cell" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Location</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">Reference to the cell where the image is to be placed.</value></prop>
+            </node>
+            <node oor:name="url" oor:op="replace">
+              <prop oor:name="DisplayName"><value xml:lang="en">Source</value></prop>
+              <prop oor:name="Description"><value xml:lang="en">The path of the source that points to the image.</value></prop>
+            </node>
+          </node>
+        </node>
         <node oor:name="SORT" oor:op="replace">
           <prop oor:name="DisplayName"><value xml:lang="en">SORT</value></prop>
           <prop oor:name="Description"><value xml:lang="en">Sorts an array. Provided by Lox365.</value></prop>
