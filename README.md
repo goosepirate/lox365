@@ -167,6 +167,36 @@ Here are what others are saying about this project:
 
 — Guille
 
+> Bravo!
+
+— Shakir Mahmud Sumon
+
+> The IMAGE function is very useful for those of us that import Google Docs that contain remote (URL base) images.
+
+— René Haché
+
+> Keep up the great work!👍
+
+— LeighAnne Kenney
+
+> 👍😀
+>
+> A 1000 thanks.
+
+— Mikael Arling
+
+> The idea is splendid because Microsoft's IMAGE function in Excel doesn't work with local pictures or with pictures from LAN shares.
+
+— Gabriela Salvisberg
+
+## Compatibility
+
+Lox365 is not compatible with Microsoft Excel.
+
+Lox365 must be installed in order to read and write Lox365 functions. You can check whether it is installed using LibreOffice Extension Manager.
+
+On a machine without Lox365 installed, you will not be able to view calculation results from Lox365 functions.
+
 ## Availability of other functions
 
 These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
@@ -217,19 +247,33 @@ https://fosstodon.org/@libreoffice/109046849962893237
 
 https://www.facebook.com/libreoffice.org/posts/pfbid07mXEodbV2i32W6JkbRYWdDoyw8sUkiw7cX8QdTLU357AhJKGr9QoH5zKeJUxArkzl
 
-🇪🇸 https://es.blog.documentfoundation.org/extension-lox365-xlookup-y-mas-para-libreoffice-calc/
+[es] https://es.blog.documentfoundation.org/extension-lox365-xlookup-y-mas-para-libreoffice-calc/
 
-🇪🇸 https://www.youtube.com/watch?v=BSPCJnc6r2g
+[es] https://www.youtube.com/watch?v=BSPCJnc6r2g
 
-🇯🇵 https://forest.watch.impress.co.jp/docs/news/1442776.html
+[ja] https://forest.watch.impress.co.jp/docs/news/1442776.html
 
-🇯🇵 https://opensource.srad.jp/story/22/09/27/1337200/
+[ja] https://opensource.srad.jp/story/22/09/27/1337200/
 
-🇯🇵 https://www.zaikei.co.jp/article/20220928/691186.html
+[ja] https://www.zaikei.co.jp/article/20220928/691186.html
 
-🇧🇷 https://www.matsuura.com.br/2022/09/extensao-lox365-xlookup-e-mais-para.html
+[pt] https://www.matsuura.com.br/2022/09/extensao-lox365-xlookup-e-mais-para.html
 
-🇹🇷 https://blog.libreoffice.org.tr/2022/09/23/libreoffice-calc-icin-yeni-bir-eklenti-goosepirate/
+[tr] https://blog.libreoffice.org.tr/2022/09/23/libreoffice-calc-icin-yeni-bir-eklenti-goosepirate/
+
+https://www.ubuntubuzz.com/2023/06/how-to-add-xlookup-function-to-libreoffice-calc.html
+
+https://www.reddit.com/r/libreoffice/comments/16gaeth/lox365_xlookup_and_now_image_for_libreoffice/
+
+https://fosstodon.org/@libreoffice/111052323463423962
+
+https://twitter.com/LibreOffice/status/1701582897784729628
+
+https://www.facebook.com/libreoffice.org/posts/pfbid02882qs7Ek5EZXgSkpkZFMHXCLHszP87pUT8uKcHDpSfwAZfWVytHanGh5fFGocieFl
+
+[zh] https://www.youtube.com/watch?v=ndvbu0kC83o
+
+https://www.youtube.com/watch?v=_zHuJIFLSMw
 
 ### Development
 
