@@ -1,12 +1,11 @@
 from com.sun.star.awt import Size
-
-def IMAGE(doc, out_cell, url):
-    drawpages = doc.DrawPages[int(out_cell.RangeAddress.Sheet)]
+def IMAGE(doc, outCell, url):
+    drawpages = doc.DrawPages[int(outCell.RangeAddress.Sheet)]
     existing_images = []
 
     def get_existing_images_at_position():
         for item in drawpages:
-            if out_cell.Position != item.Position: continue
+            if outCell.Position != item.Position: continue
             existing_images.append(item)
     def remove_existing_images_at_position():
         [item.dispose() for item in existing_images]
@@ -26,7 +25,7 @@ def IMAGE(doc, out_cell, url):
         url = '/'.join(current_dir) + '/' + url
 
     image = doc.createInstance('com.sun.star.drawing.GraphicObjectShape')
-    image.Position = out_cell.Position
+    image.Position = outCell.Position
     image.GraphicURL = url
     image.Name = f'Generated image'
     try:
