@@ -4,20 +4,10 @@
 
 module org { module openoffice { module sheet { module addin {
     interface XLox365 : com::sun::star::uno::XInterface {
-        sequence< sequence< any > > FILTER(
-            [in] sequence< sequence< any > > array,
-            [in] sequence< sequence< any > > include,
-            [in] any ifEmpty
-        );
         any IMAGE(
             [in] com::sun::star::beans::XPropertySet doc,
             [in] com::sun::star::table::XCellRange out_cell,
             [in] string url
-        );
-        sequence< sequence< any > > SORT(
-            [in] sequence< sequence< any > > array,
-            [in] any sortIndex,
-            [in] any sortOrder
         );
         sequence< sequence< any > > TEXTSPLIT(
             [in] string text,
@@ -25,15 +15,6 @@ module org { module openoffice { module sheet { module addin {
         );
         sequence< sequence< any > > TOCOL(
             [in] sequence< sequence< any > > array
-        );
-        sequence< sequence< any > > UNIQUE(
-            [in] com::sun::star::table::XCellRange array
-        );
-        sequence< sequence< any > > XLOOKUP(
-            [in] any lookupValue,
-            [in] com::sun::star::table::XCellRange lookupArray,
-            [in] com::sun::star::table::XCellRange returnArray,
-            [in] any ifNotFound
         );
     };
 }; }; }; };
