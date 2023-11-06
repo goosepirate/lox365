@@ -23,6 +23,8 @@ Use the function like you would any other function in LibreOffice Calc.
 
 To output results in multiple cells, enter your formula with Ctrl + Shift + Enter.
 
+To edit the formula that is using multiple cells, select the entire cell range first.
+
 This is because Lox365 functions are [array functions](https://help.libreoffice.org/latest/en-US/text/scalc/01/04060107.html). LibreOffice Calc does not support Excel's [dynamic arrays](https://support.microsoft.com/en-us/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7).
 
 ### Syntax
