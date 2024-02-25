@@ -27,7 +27,7 @@ This is because Lox365 functions are [array functions](https://help.libreoffice.
 
 ### Syntax
 
-#### FILTER
+#### FILTER (assigned to be added in LibreOffice 24.8)
 
 Filters an array.
 
@@ -61,7 +61,7 @@ Similar to Excel's [IMAGE](https://support.microsoft.com/en-us/office/image-func
 * `out_cell`: Reference to the cell where the image is to be placed.
 * `source`: The path of the source that points to the image.
 
-#### SORT
+#### SORT (assigned to be added in LibreOffice 24.8)
 
 Sorts an array.
 
@@ -100,7 +100,7 @@ Similar to Excel's [TOCOL](https://support.microsoft.com/en-us/office/tocol-func
 * `array`: The array to return as a column.
 * Not supported: `ignore`, `scan_by_column`.
 
-#### UNIQUE
+#### UNIQUE (assigned to be added in LibreOffice 24.8)
 
 Returns the unique values from a range or array.
 
@@ -112,7 +112,7 @@ Similar to Excel's [UNIQUE](https://support.microsoft.com/en-us/office/unique-fu
 * `array`: The array from which to return unique rows.
 * Not supported: `by_col`, `exactly_once`.
 
-#### XLOOKUP
+#### XLOOKUP (available in [LibreOffice 24.8](https://wiki.documentfoundation.org/ReleaseNotes/24.8#Calc))
 
 Searches an array for a match and returns the corresponding item from a second array.
 
@@ -201,16 +201,22 @@ On a machine without Lox365 installed, you will not be able to view calculation 
 
 These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
 
-* RANDARRAY
-* SEQUENCE
-* SORTBY
 * STOCKHISTORY
 * TOROW
-* XMATCH
 
-These functions are not in LibreOffice Calc now, but are planned to be added:
+These functions have been assigned to be added in LibreOffice 24.8:
+* [FILTER](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [LET](https://bugs.documentfoundation.org/show_bug.cgi?id=137543)
+* [RANDARRAY](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [SEQUENCE](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [SORT](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [SORTBY](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [UNIQUE](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
 
-* XLOOKUP
+Please test and provide feedback on the these functions that have been added in [LibreOffice 24.8](https://wiki.documentfoundation.org/ReleaseNotes/24.8#Calc):
+
+* [XLOOKUP](https://bugs.documentfoundation.org/show_bug.cgi?id=127293)
+* [XMATCH](https://bugs.documentfoundation.org/show_bug.cgi?id=128425)
 
 These functions are already available in LibreOffice:
 
