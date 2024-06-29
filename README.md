@@ -1,6 +1,6 @@
-# ⚗️ Lox365: XLOOKUP for LibreOffice
+# ⚗️ Lox365: LibreOffice Calc eXtension 365
 
-Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions like XLOOKUP, FILTER, and more.
+Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions like IMAGE, TEXTSPLIT, and TOCOL.
 
 ![Screenshot](image1.png)
 
@@ -23,15 +23,17 @@ Use the function like you would any other function in LibreOffice Calc.
 
 To output results in multiple cells, enter your formula with Ctrl + Shift + Enter.
 
-This is because Lox365 functions are [array functions](https://help.libreoffice.org/latest/en-US/text/scalc/01/04060107.html). LibreOffice Calc does not support Excel's [dynamic arrays](https://support.microsoft.com/en-us/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7).
+This is because Lox365 functions are [array functions](https://help.libreoffice.org/latest/en-US/text/scalc/01/04060107.html). LibreOffice Calc does not support Excel’s [dynamic arrays](https://support.microsoft.com/en-us/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7).
 
 ### Syntax
 
 #### FILTER
 
+_The [FILTER](https://bugs.documentfoundation.org/show_bug.cgi?id=126573) function is available in [LibreOffice Calc 24.8](https://wiki.documentfoundation.org/ReleaseNotes/24.8#Calc), or later, without the need for this extension._
+
 Filters an array.
 
-Similar to Excel's [FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759).
+Similar to Excel’s [FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759).
 
 ![Screenshot of FILTER function](image2.png)
 
@@ -47,7 +49,7 @@ Returns an image from a given source.
 
 The source can be a local image file or a web URL. You can use a web URL of a third-party service to generate, for example, a QR code, equation, or diagram.
 
-Similar to Excel's [IMAGE](https://support.microsoft.com/en-us/office/image-function-7e112975-5e52-4f2a-b9da-1d913d51f5d5).
+Similar to Excel’s [IMAGE](https://support.microsoft.com/en-us/office/image-function-7e112975-5e52-4f2a-b9da-1d913d51f5d5).
 
 ![Screenshot of IMAGE function](image7.png)
 
@@ -63,9 +65,11 @@ Similar to Excel's [IMAGE](https://support.microsoft.com/en-us/office/image-func
 
 #### SORT
 
+_The [SORT](https://bugs.documentfoundation.org/show_bug.cgi?id=126573) function is available in [LibreOffice Calc 24.8](https://wiki.documentfoundation.org/ReleaseNotes/24.8#Calc), or later, without the need for this extension._
+
 Sorts an array.
 
-Similar to Excel's [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c).
+Similar to Excel’s [SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c).
 
 ![Screenshot of SORT function](image3.png)
 
@@ -79,7 +83,7 @@ Similar to Excel's [SORT](https://support.microsoft.com/en-us/office/sort-functi
 
 Splits text into columns using delimiters.
 
-Similar to Excel's [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsplit-function-b1ca414e-4c21-4ca0-b1b7-bdecace8a6e7).
+Similar to Excel’s [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsplit-function-b1ca414e-4c21-4ca0-b1b7-bdecace8a6e7).
 
 ![Screenshot of TEXTSPLIT function](image4.png)
 
@@ -92,7 +96,7 @@ Similar to Excel's [TEXTSPLIT](https://support.microsoft.com/en-us/office/textsp
 
 Returns the array as one column.
 
-Similar to Excel's [TOCOL](https://support.microsoft.com/en-us/office/tocol-function-22839d9b-0b55-4fc1-b4e6-2761f8f122ed).
+Similar to Excel’s [TOCOL](https://support.microsoft.com/en-us/office/tocol-function-22839d9b-0b55-4fc1-b4e6-2761f8f122ed).
 
 ![Screenshot of TOCOL function](image5.png)
 
@@ -102,9 +106,11 @@ Similar to Excel's [TOCOL](https://support.microsoft.com/en-us/office/tocol-func
 
 #### UNIQUE
 
+_The [UNIQUE](https://bugs.documentfoundation.org/show_bug.cgi?id=126573) function is available in [LibreOffice Calc 24.8](https://wiki.documentfoundation.org/ReleaseNotes/24.8#Calc), or later, without the need for this extension._
+
 Returns the unique values from a range or array.
 
-Similar to Excel's [UNIQUE](https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e).
+Similar to Excel’s [UNIQUE](https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e).
 
 ![Screenshot of UNIQUE function](image6.png)
 
@@ -114,9 +120,11 @@ Similar to Excel's [UNIQUE](https://support.microsoft.com/en-us/office/unique-fu
 
 #### XLOOKUP
 
+_The [XLOOKUP](https://bugs.documentfoundation.org/show_bug.cgi?id=127293) function is available in [LibreOffice Calc 24.8](https://wiki.documentfoundation.org/ReleaseNotes/24.8#Calc), or later, without the need for this extension._
+
 Searches an array for a match and returns the corresponding item from a second array.
 
-Similar to Excel's [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
+Similar to Excel’s [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
 
 ![Screenshot of XLOOKUP function](image1.png)
 
@@ -201,16 +209,19 @@ On a machine without Lox365 installed, you will not be able to view calculation 
 
 These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
 
-* RANDARRAY
-* SEQUENCE
-* SORTBY
 * STOCKHISTORY
 * TOROW
-* XMATCH
 
-These functions are not in LibreOffice Calc now, but are planned to be added:
+These functions are available since LibreOffice Calc 24.8:
 
-* XLOOKUP
+* [FILTER](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [RANDARRAY](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [SEQUENCE](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [SORT](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [SORTBY](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [UNIQUE](https://bugs.documentfoundation.org/show_bug.cgi?id=126573)
+* [XLOOKUP](https://bugs.documentfoundation.org/show_bug.cgi?id=127293)
+* [XMATCH](https://bugs.documentfoundation.org/show_bug.cgi?id=127293)
 
 These functions are already available in LibreOffice:
 
