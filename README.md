@@ -1,10 +1,10 @@
-# ⚗️ Lox365: XLOOKUP for LibreOffice
+# ⚗️ Lox365: Modern functions for LibreOffice
 
-Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions like XLOOKUP, FILTER, and more.
+Lox365 is a LibreOffice Calc extension that adds modern spreadsheet functions like IMAGE, TEXTSPLIT, and TOCOL.
 
-![Screenshot](image1.png)
+![Screenshot](image9.png)
 
-![Screenshot](image2.png)
+![Screenshot](image4.png)
 
 Do you like using Lox365? Let me know in the [Discussions](https://github.com/goosepirate/lox365/discussions). Maybe [buy me a coffee](https://liberapay.com/goosepirate/).
 
@@ -29,7 +29,7 @@ This is because Lox365 functions are [array functions](https://help.libreoffice.
 
 ### Syntax
 
-#### FILTER
+#### ~~FILTER~~ (Removed)
 
 Filters an array.
 
@@ -63,7 +63,7 @@ Similar to Excel's [IMAGE](https://support.microsoft.com/en-us/office/image-func
 * `out_cell`: Reference to the cell where the image is to be placed.
 * `source`: The path of the source that points to the image.
 
-#### SORT
+#### ~~SORT~~ (Removed)
 
 Sorts an array.
 
@@ -102,7 +102,7 @@ Similar to Excel's [TOCOL](https://support.microsoft.com/en-us/office/tocol-func
 * `array`: The array to return as a column.
 * Not supported: `ignore`, `scan_by_column`.
 
-#### UNIQUE
+#### ~~UNIQUE~~ (Removed)
 
 Returns the unique values from a range or array.
 
@@ -114,7 +114,7 @@ Similar to Excel's [UNIQUE](https://support.microsoft.com/en-us/office/unique-fu
 * `array`: The array from which to return unique rows.
 * Not supported: `by_col`, `exactly_once`.
 
-#### XLOOKUP
+#### ~~XLOOKUP~~ (Removed)
 
 Searches an array for a match and returns the corresponding item from a second array.
 
@@ -128,6 +128,15 @@ Similar to Excel's [XLOOKUP](https://support.microsoft.com/en-us/office/xlookup-
 * `return_array`: The array to return.
 * `[if_not_found]`: Where a valid match is not found, return the [if_not_found] text you supply. Optional.
 * Not supported: `match_mode`, `search_mode`.
+
+## Version notes
+
+These functions have been removed in Lox365 version 6 because you can now use them in the latest LibreOffice (24.8):
+
+* FILTER
+* SORT
+* UNIQUE
+* XLOOKUP
 
 ## Why
 
@@ -203,25 +212,29 @@ On a machine without Lox365 installed, you will not be able to view calculation 
 
 These functions are not in LibreOffice and not provided by Lox365 but are available in the latest Excel:
 
-* RANDARRAY
-* SEQUENCE
-* SORTBY
+* GROUPBY
+* LAMBDA
+* PIVOTBY
 * STOCKHISTORY
 * TOROW
-* XMATCH
 
-These functions are not in LibreOffice Calc now, but are planned to be added:
-
-* XLOOKUP
-
-These functions are already available in LibreOffice:
+These functions are available in the latest LibreOffice:
 
 * CONCAT
+* FILTER
 * IFS
+* LET
 * MAXIFS
 * MINIFS
+* RANDARRAY
+* SEQUENCE
+* SORT
+* SORTBY
 * SWITCH
 * TEXTJOIN
+* UNIQUE
+* XLOOKUP
+* XMATCH
 
 ## References
 

@@ -37,33 +37,10 @@ class Lox365(unohelper.Base, XLox365):
         }
         return useful_positions
 
-    def FILTER   (self, *args): return lx.FILTER   (*args)
     def IMAGE    (self, *args): return lx.IMAGE    (*args)
-    def SORT     (self, *args): return lx.SORT     (*args)
     def TEXTSPLIT(self, *args): return lx.TEXTSPLIT(*args)
     def TOCOL    (self, *args): return lx.TOCOL    (*args)
 
-    def UNIQUE(self, *args):
-        shrunk_corners = self._get_shrunk_corners(args[0])
-        shrunk_dataarray = self._get_dataarray(args[0], shrunk_corners)
-        args = (shrunk_dataarray,)
-        return lx.UNIQUE(*args)
-
-    def XLOOKUP(self, *args):
-        shrunk_corners1 = self._get_shrunk_corners(args[1])
-        shrunk_corners2 = self._get_shrunk_corners(args[2])
-        shrunk_corners_common_bottom = max(
-            shrunk_corners1['bottom'], shrunk_corners2['bottom'])
-        shrunk_dataarray1 = self._get_dataarray(args[1], {
-            'left': 0, 'top': 0,
-            'right': shrunk_corners1['right'],
-            'bottom': shrunk_corners_common_bottom})
-        shrunk_dataarray2 = self._get_dataarray(args[2], {
-            'left': 0, 'top': 0,
-            'right': shrunk_corners2['right'],
-            'bottom': shrunk_corners_common_bottom})
-        args = (args[0], shrunk_dataarray1, shrunk_dataarray2, *args[3:],)
-        return lx.XLOOKUP(*args)
 
 def createInstance(ctx):
     return Lox365(ctx)

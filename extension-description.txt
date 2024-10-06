@@ -1,1 +1,1 @@
-Lox365: XLOOKUP for LibreOffice
+Lox365: Modern functions for LibreOffice
